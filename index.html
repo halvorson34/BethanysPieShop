@@ -7,12 +7,21 @@
     <title>Document</title>
 </head>
     <style>
-        div {
-            background-color: #39f;
-            color: #fff;
+        .columns {
+            border: solid 1px #ccc;
+            width: 100%;
+        }
+
+        .columns > div {
+            width: 49%;
+            border: solid 1px #ddd;
+            float: left;
         }
     </style>
 <body>
-    <div>Hello World</div>
+    <div class="columns">
+        <div>Column 1</div>
+        <div>Column 2</div>
+    </div>
 </body>
 </html>

@@ -8,25 +8,24 @@
 </head>
 <body>
     <script>
-
         function greet(name) {
+            let result = "";
 
-        if (name === "Craig")
-        {
-            console.log("What's up Craig!")
-        } else if (name === "Tyler")
-        {
-            console.log("Who invited Tyler?")
-        } else
-        {
-            console.log("Nobody is here.")
+            if (name === "Craig") {
+                result = "Hey Craig";
+            } else if (name === "Larry") {
+                result = "Hey Larry";
+            } else
+            {
+                result = "Nobody's home"
+            }
+
+            return result;
         }
-    }
-    let person = "Larry";
 
-    greet(person);
-    greet("Tyler");
-    greet("Craig");
+        let message = greet("Larry");
+
+        console.log(message);
     </script>
 </body>
 </html>

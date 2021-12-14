@@ -9,9 +9,7 @@
 <body>
     <script>
 
-        function greet() {
-
-        let name = "Tyler";
+        function greet(name) {
 
         if (name === "Craig")
         {
@@ -24,9 +22,11 @@
             console.log("Nobody is here.")
         }
     }
+    let person = "Larry";
 
-    greet();
-
+    greet(person);
+    greet("Tyler");
+    greet("Craig");
     </script>
 </body>
 </html>

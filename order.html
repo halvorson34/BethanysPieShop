@@ -7,24 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <section id="craig-shoemaker" class="card">
-        <h1>Craig Shoemaker</h1>
-        <ul>
-            <li><a href="https://twitter.com/craigshoemaker" class="tag">Twitter</a></li>
-            <li><a href="https://github.com/craigshoemaker" class="tag">GitHub</a></li>
-        </ul>
-    </section>
-    <section id="john-papa" class="card">
-        <h1>John Papa</h1>
-        <ul>
-            <li><a href="https://twitter.com/john_papa" class="tag">Twitter</a></li>
-            <li><a href="https://github.com/johnpapa" class="tag">GitHub</a></li>
-        </ul>
-    </section>
+    <button id="click-me">Click Me</button>
+
     <script>
-        let links = document.querySelectorAll(".tag");
-        links.forEach(function(link) {
-            link.setAttribute("target", "_blank");
+        window.addEventListener("DOMContentLoaded", function(e) {
+            console.log("Page is loaded");
+
+            let btn = document.querySelector("#click-me");
+            btn.addEventListener("click", function(e) {
+                console.log("Button was clicked");
+            });
         });
     </script>
 </body>

@@ -7,27 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <section id="craig-shoemaker" class="card">
+        <h1>Craig Shoemaker</h1>
+        <ul>
+            <li><a href="https://twitter.com/craigshoemaker" class="tag">Twitter</a></li>
+            <li><a href="https://github.com/craigshoemaker" class="tag">GitHub</a></li>
+        </ul>
+    </section>
+    <section id="john-papa" class="card">
+        <h1>John Papa</h1>
+        <ul>
+            <li><a href="https://twitter.com/john_papa" class="tag">Twitter</a></li>
+            <li><a href="https://github.com/johnpapa" class="tag">GitHub</a></li>
+        </ul>
+    </section>
     <script>
-        let count = 0;
-        let max = 10;
-
-        while(count < max) {
-            console.log("in while loop");
-            console.log(count);
-            count = count + 1;
-        }
-
-        for (let i = 0; i < 10; i++) {
-            console.log("in for loop");
-            console.log(i);
-        }
-
-        let days = ["Mon", "Tue", "Wed"];
-
-        days.forEach(function(day, index){
-            console.log(`day: ${day}, index: ${index}`);
+        let links = document.querySelectorAll(".tag");
+        links.forEach(function(link) {
+            link.setAttribute("target", "_blank");
         });
-
     </script>
 </body>
 </html>
